@@ -1,0 +1,28 @@
+<!-- <article class="thumb">
+    <a href="#" class="image"><img src="" alt="" /></a>
+    <h2>{{ .Page.Resources }}</h2>
+    <p></p>
+</article> -->
+
+{{ $album := .Page.RelPermalink}}
+{{ $dirToSearch := (printf "content%simg" $album)}}
+{{ $dirToLoadThumbnail := (printf "%simg" $album)}}
+{{ $dirToLoadFull := "img" }}
+{{ range sort (readDir $dirToSearch) "ModTime" }}
+    <!-- <article class="thumb">
+        <a href="{{$dirToLoadFull}}{{ .Name | relURL }}" class="image"><img src="{{$dirToLoadThumbnail}}{{ .Name | relURL }}" alt="" /></a>
+        <h2>{{ (strings.TrimRight ".jpg" .Name) }}</h2>
+        <p>{{$dirToSearch}}{{ .Name | relURL }}</p>
+    </article> -->
+{{ end }}
+
+{{ $image := (.Page.Resources.ByType "image") }}
+{{ with $image }}
+    {{ range . }}
+        <article class="thumb">
+            <a href="#" class="image"><img src="" alt="" /></a>
+            <h2>{{ .Permalink }}</h2>
+            <p></p>
+        </article>
+    {{ end }}
+{{ end }}

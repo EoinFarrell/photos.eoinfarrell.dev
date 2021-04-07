@@ -1,0 +1,5 @@
+<article class="thumb komoot">
+	<iframe src="https://www.komoot.com/collection/{{.Get 0 }}/embed" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	<h2>{{ .Get "phototitle" }}</h2>
+	<p>{{ .Get "description" | markdownify }}</p>
+</article>
