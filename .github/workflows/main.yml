@@ -9,3 +9,30 @@ jobs:
       uses: actions/checkout@master
     - name: Build Hugo
       uses: lowply/build-hugo@v0.79.0
+    - name: GitHub Pages
+      # You may pin to the exact commit or the version.
+      # uses: crazy-max/ghaction-github-pages@b8f8d291c97fe0edd9fb4ee73018163593418e8f
+      uses: crazy-max/ghaction-github-pages@v2.3.0
+      with:
+        # Git domain (default github.com)
+        domain: photos.eoinfarrell.dev
+        # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
+        repo: https://github.com/EoinFarrell/photos.eoinfarrell.github.io.git
+        # Git branch where assets will be deployed
+        #target_branch: # optional, default is gh-pages
+        # Create incremental commit instead of doing push force
+        keep_history: true
+        # Allow an empty commit to be created
+        #allow_empty_commit: # optional, default is true
+        # Build directory to deploy
+        build_dir: publicc 
+        # The committer name and email address
+        committer: Eoin Farrell
+        # The author name and email address
+        author: Eoin Farrell
+        # Commit message
+        commit_message: Updating github pages
+        # Write the given domain name to the CNAME file
+        #fqdn: # optional
+        # Allow Jekyll to build your site
+        jekyll: false
