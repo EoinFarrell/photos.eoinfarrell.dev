@@ -25,7 +25,7 @@ jobs:
         # Allow an empty commit to be created
         #allow_empty_commit: # optional, default is true
         # Build directory to deploy
-        build_dir: publicc 
+        build_dir: public
         # The committer name and email address
         committer: Eoin Farrell
         # The author name and email address
