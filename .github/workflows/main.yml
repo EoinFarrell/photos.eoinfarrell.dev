@@ -19,7 +19,7 @@ jobs:
         # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
         repo: EoinFarrell/photos.eoinfarrell.github.io
         # Git branch where assets will be deployed
-        #target_branch: # optional, default is gh-pages
+        target_branch: master # optional, default is gh-pages
         # Create incremental commit instead of doing push force
         keep_history: true
         # Allow an empty commit to be created
