@@ -15,9 +15,9 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.3.0
       with:
         # Git domain (default github.com)
-        domain: photos.eoinfarrell.dev
+        #domain: photos.eoinfarrell.dev
         # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
-        repo: https://github.com/EoinFarrell/photos.eoinfarrell.github.io.git
+        repo: EoinFarrell/photos.eoinfarrell.github.io
         # Git branch where assets will be deployed
         #target_branch: # optional, default is gh-pages
         # Create incremental commit instead of doing push force
