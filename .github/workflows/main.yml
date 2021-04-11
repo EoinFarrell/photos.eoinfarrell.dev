@@ -32,7 +32,7 @@ jobs:
         AWS_S3_BUCKET: ${{ secrets.B2_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.B2_APPKEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.B2_APPKEY }}
-        AWS_S3_ENDPOINT: ' s3.eu-central-003.backblazeb2.com '
+        AWS_S3_ENDPOINT: 'https://s3.eu-central-003.backblazeb2.com'
         AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
         SOURCE_DIR: 'public'      # optional: defaults to entire repository
     - name: GitHub Pages
