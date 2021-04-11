@@ -25,6 +25,15 @@ jobs:
       run: ls
     - name: ls public
       run: ls public
+    - name: Backblaze B2 Sync
+      # You may pin to the exact commit or the version.
+      # uses: jakejarvis/backblaze-b2-action@133946a9c2b20fa81a796eef66cbc0ebe473d078
+      uses: jakejarvis/backblaze-b2-action@v0.1.0
+      env:
+        SOURCE_DIR: './public'
+        B2_BUCKET: ${{ secrets.B2_BUCKET }}
+        B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
+        B2_APPKEY: ${{ secrets.B2_APPKEY }}
     - name: GitHub Pages
       # You may pin to the exact commit or the version.
       # uses: crazy-max/ghaction-github-pages@b8f8d291c97fe0edd9fb4ee73018163593418e8f
