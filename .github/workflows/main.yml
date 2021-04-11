@@ -25,15 +25,16 @@ jobs:
       run: ls
     - name: ls public
       run: ls public
-    - name: Backblaze B2 Sync
-      # You may pin to the exact commit or the version.
-      # uses: jakejarvis/backblaze-b2-action@133946a9c2b20fa81a796eef66cbc0ebe473d078
-      uses: jakejarvis/backblaze-b2-action@v0.1.0
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
       env:
-        SOURCE_DIR: './public'
-        B2_BUCKET: ${{ secrets.B2_BUCKET }}
-        B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
-        B2_APPKEY: ${{ secrets.B2_APPKEY }}
+        AWS_S3_BUCKET: ${{ secrets.B2_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.B2_APPKEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.B2_APPKEY }}
+        AWS_S3_ENDPOINT: ' s3.eu-central-003.backblazeb2.com '
+        AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
+        SOURCE_DIR: 'public'      # optional: defaults to entire repository
     - name: GitHub Pages
       # You may pin to the exact commit or the version.
       # uses: crazy-max/ghaction-github-pages@b8f8d291c97fe0edd9fb4ee73018163593418e8f
