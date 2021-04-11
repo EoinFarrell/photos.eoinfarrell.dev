@@ -23,8 +23,6 @@ resources:
   type: image
 - src: westport-to-galway-2020/day-1-10.jpg
   type: image
-- src: westport-to-galway-2020/day-1-6.jpg
-  type: image
 - src: westport-to-galway-2020/day-1-7.jpg
   type: image
 - src: westport-to-galway-2020/day-1-5.jpg
@@ -45,9 +43,9 @@ resources:
   type: image
 - link: 3897891815/embed/f5cee2fe435146ce860da2a3a5004e7e92276299
   type: strava
-- src: westport-to-galway-2020/day-2-1.jpg
-  type: image
 - src: westport-to-galway-2020/day-2-2.jpg
+  type: image
+- src: westport-to-galway-2020/day-2-1.jpg
   type: image
 - src: westport-to-galway-2020/kylemore-abbey.jpg
   type: image
@@ -55,15 +53,15 @@ resources:
   type: image
 - link: 3903084814/embed/43c5a7ec6b296015f74d21f815aa0b9716ad66ae
   type: strava
-- src: westport-to-galway-2020/day-3-4.jpg
-  type: image
-- src: westport-to-galway-2020/day-3-1.jpg
-  type: image
 - src: westport-to-galway-2020/roundstone-2.jpg
+  type: image
+- src: westport-to-galway-2020/day-3-4.jpg
   type: image
 - src: westport-to-galway-2020/dogs-beach.jpg
   type: image
 - src: westport-to-galway-2020/dogs-beach-2.jpg
+  type: image
+- src: westport-to-galway-2020/day-3-1.jpg
   type: image
 - src: westport-to-galway-2020/dogs-beach-3.jpg
   type: image
@@ -73,19 +71,19 @@ resources:
   type: image
 - link: 3908442389/embed/96fa6603b2a8111818f0e7017ab7ecded9c9105e
   type: strava
-- src: westport-to-galway-2020/day-4-1.jpg
-  type: image
-- src: westport-to-galway-2020/day-4-2.jpg
-  type: image
 - src: westport-to-galway-2020/day-4-3.jpg
   type: image
-- src: westport-to-galway-2020/day-4-7.jpg
+- src: westport-to-galway-2020/day-4.jpg
   type: image
-- src: westport-to-galway-2020/day-4-6.jpg
+- src: westport-to-galway-2020/day-4-1.jpg
   type: image
 - src: westport-to-galway-2020/day-4-5.jpg
   type: image
-- src: westport-to-galway-2020/day-4.jpg
+- src: westport-to-galway-2020/day-4-6.jpg
+  type: image
+- src: westport-to-galway-2020/day-4-7.jpg
+  type: image
+- src: westport-to-galway-2020/day-4-2.jpg
   type: image
 - link: 3912451360/embed/65d5a4befb89089d23a7ef860fe1454a7af55403
   type: strava
