@@ -13,7 +13,7 @@ resources:
 - src: westport-to-galway-2020/train-2.jpg
   type: image
 - link: 3894190817/embed/467ea7d7e67b1028042de27effd1da410e9c8ece
-  type: 
+  type: strava
   title: Westport to Galway - Day 1
 - src: westport-to-galway-2020/westport.jpg
   type: image
